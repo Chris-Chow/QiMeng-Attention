@@ -224,15 +224,16 @@ exploit GPU performance.
         <div class="content">
           <h2 class="title is-3"> Main Results </h2>
           <p>
-            We conduct our QiMeng-GEMM on some SOTA LLMs to evaluate the effectiveness. We evaluate the GEMM code on various platforms including CPU(RISC-V Xuantie C910) and GPU(NVIDIA RTX 4070). We test the performace of vanilla GPT-4o and claude-3.5-sonnet on many dimensions of GEMM.
+            We conduct our QiMeng-Attention on Deepseek-V3 to evaluate the effectiveness. We evaluate some attention variety such as MHA(multi-head attention)
+            and GQA(group-query attention). We test the performace on different length of input sequence.
           </p>
           <p>
-            Implemented on various LLMs, QiMeng-GEMM achieves a performance enhancement of up to 113x compared 
-            to vanilla LLMs. Besides QiMeng-GEMM can achieve better performances compared to handcraft high performance library such as 
-            OpenBLAS and cuBLAS. 
+            Here shows the results on A100 and head dimension of 128. Implemented on Deepseek-V3, QiMeng-Attention achieves a performance enhancement of up to 17.73x compared 
+            to vanilla LLMs. Besides QiMeng-Attention can achieve better performances compared to handcraft high performance library such as 
+            flash-attn and cuDNN. 
           </p>
-          <img src="./static/images/result1.png" style="display: block; margin: 0 auto; width: 60%; height: auto">
-          <p>
+          <img src="./static/images/result.png" style="display: block; margin: 0 auto; width: 60%; height: auto">
+          <!-- <p>
             We extend our QiMeng-GEMM to many other platforms include RISC-V and NVIDIA GPUs, and we can still get the significent performance gains.
           </p>
           <img src="./static/images/performance.png" style="display: block; margin: 0 auto; width: 100%; height: auto">
@@ -240,10 +241,10 @@ exploit GPU performance.
             We have developed QiMeng-GEMM into a tool that can conveniently generate GEMM code. It can automatically generate GEMM code for different platforms.
           </p>
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+            Your video file here
             <source src="static/images/QiMeng-GEMM-v2.mp4"
             type="video/mp4">
-          </video>
+          </video> -->
         </div>
       </div>
     </div>
